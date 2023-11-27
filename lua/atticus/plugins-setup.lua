@@ -36,12 +36,13 @@ return packer.startup(function(use)
 
 	use("bluz71/vim-nightfly-guicolors")
 
-	use("catppuccin/nvim")
+	use("catppuccin/nvim") -- best colorscheme
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
+	use("xiyaowong/transparent.nvim")
 	-- essential plugins
 	use("tpope/vim-surround")
 	use("vim-scripts/ReplaceWithRegister")
