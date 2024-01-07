@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 
+local n_opts = { silent = true, noremap = true }
+local t_opts = { silent = true }
 local keymap = vim.keymap
 
 -- general keymaps
@@ -41,3 +43,9 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+
+-- floating terminal
+keymap.set("n", "<leader>fd", ":FloatermToggle<CR>")
+
+-- entering normal mode from terminal
+keymap.set("t", "jk", "<C-\\><C-n>", n_opts)
