@@ -47,5 +47,11 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 -- floating terminal
 keymap.set("n", "<leader>fd", ":FloatermToggle<CR>")
 
+keymap.set("n", "<leader>fa", ":FloatermKill!")
+
 -- entering normal mode from terminal
 keymap.set("t", "jk", "<C-\\><C-n>", n_opts)
+
+-- vertical movement
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "C-u>", "<C-u>zz")

@@ -111,6 +111,9 @@ return packer.startup(function(use)
 	-- git signs plugin
 	use("lewis6991/gitsigns.nvim")
 
+	-- gruvbox
+	use({ "ellisonleao/gruvbox.nvim" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
