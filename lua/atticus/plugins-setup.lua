@@ -56,6 +56,8 @@ return packer.startup(function(use)
 	--icons
 	use("kyazdani42/nvim-web-devicons")
 
+	-- built in terminal
+	use("voldikss/vim-floaterm")
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
 
